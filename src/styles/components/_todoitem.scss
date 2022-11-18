@@ -1,0 +1,48 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    .completed {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5px;
+        opacity: 0.5;
+        width: 100px;
+
+        &.active {
+            color: rgb(10, 247, 69);
+        }
+    }
+
+    .todo {
+        font-size: 1.2rem;
+        flex: 3;
+    }
+
+    .edit-input {
+        font-size: 1.2rem;
+        flex: 3;
+        border: none;
+        outline: none;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 4px;
+        height: 100%;
+    }
+
+    .edit,
+    .delete {
+        width: 50px;
+        height: 100%;
+    }
+
+    .status {
+        font-size: 1rem;
+        border: none;
+    }
+}
